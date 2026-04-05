@@ -5,8 +5,7 @@
 ```markdown
 # Student Registration System
 
-A fully responsive web application for managing student records – add, edit, delete, and persistent storage using the browser's localStorage. Built with plain HTML, CSS, and JavaScript following strict coding conventions: no arrow functions, no `!` operator, no ternary operators, only `var`.
-
+A fully responsive web application for managing student records – add, edit, delete, and persistent storage using the browser's localStorage. Built with plain HTML, CSS, and JavaScript
 ## Features
 
 - **Add Student** – Register a student with name, ID, email, and contact number.
