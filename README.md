@@ -31,13 +31,7 @@ A fully responsive web application for managing student records – add, edit, d
 
 ## File Structure
 
-```
-student-registration-system/
-├── index.html      # Main HTML structure
-├── style.css       # All styling and responsive rules
-├── script.js       # JavaScript logic (CRUD, localStorage, validation)
-└── README.md       # Project documentation
-```
+
 
 ## How to Run
 
