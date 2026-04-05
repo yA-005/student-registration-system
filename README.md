@@ -1,8 +1,6 @@
 
 
-Here is the **README.md** file for your project. Copy and paste this into a file named `README.md` in your project folder, then commit and push it to GitHub.
 
----
 
 ```markdown
 # Student Registration System
