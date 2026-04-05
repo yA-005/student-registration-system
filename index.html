@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Student Registration System - register, edit and delete student records with local storage">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section (Task 2) -->
+        <header class="main-header">
+            <h1>📚 Student Registration System</h1>
+            <p>Register new students, edit existing records, delete entries, and persist data even after page refresh.</p>
+        </header>
+
+        <!-- Form Section (Task 3) -->
+        <section class="form-section">
+            <h2>Student Registration Form</h2>
+            <form id="studentForm" action="javascript:void(0);">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="studentName">Student Name *</label>
+                        <input type="text" id="studentName" placeholder="Enter full name (letters only)">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentId">Student ID *</label>
+                        <input type="text" id="studentId" placeholder="Numeric ID only">
+                        <span class="error-message" id="idError"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="emailId">Email ID *</label>
+                        <input type="email" id="emailId" placeholder="example@domain.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNo">Contact Number *</label>
+                        <input type="tel" id="contactNo" placeholder="Minimum 10 digits, numbers only">
+                        <span class="error-message" id="contactError"></span>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" id="addBtn" class="btn btn-primary">Add Student</button>
+                    <button type="button" id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Display Section  -->
+        <section class="display-section">
+            <h2>Registered Students</h2>
+            <div id="recordsContainer" class="records-container">
+                <div class="table-wrapper">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Student ID</th>
+                                <th>Email ID</th>
+                                <th>Contact No.</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr class="empty-row"><td colspan="5">No records found. Add a student.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
